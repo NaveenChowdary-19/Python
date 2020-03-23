@@ -4,3 +4,7 @@ from itertools import groupby
 
 groups = groupby(s)
 result = [(label, sum(1 for _ in group)) for label, group in groups] 
+
+from packaging import version
+>>> version.parse("2.3.1") < version.parse("10.1.2")
+True
