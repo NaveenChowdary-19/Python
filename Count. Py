@@ -1,0 +1,6 @@
+s = "111000222334455555"
+
+from itertools import groupby
+
+groups = groupby(s)
+result = [(label, sum(1 for _ in group)) for label, group in groups] 
