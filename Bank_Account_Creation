@@ -1,0 +1,181 @@
+"""class Person:
+    def say_hello():
+        print("Hello Naveen Chowdary")
+        #print(self)
+        
+Shivaram=Person()
+Naveen=Person()
+Naveen.say_hello()
+# o/p  ==  Hello Naveen Chowdary
+
+Shivaram.say_hello()
+# o/p  ==  Hello Naveen Chowdary
+
+"""
+
+'''
+class Person:
+    def Greet(self,Name='Person'):
+        return "Hello {}".format(Name)
+Naveen=Person()
+#print(Naveen)
+#o/p  ==  <__main__.Person object at 0x7ff016b9af28>
+Greeting=Naveen.Greet("Naveen")
+print(Greeting)
+#o/p  ==  Hello Naveen
+Greeting=Naveen.Greet()
+print(Greeting)
+#o/p  ==   Hello Person
+
+'''
+
+
+'''
+class Person:
+    def __init__(self,Name,Age,Sal):
+        self.Fullname=Name
+        self.My_Age=Age
+        self.My_Sal=Sal
+        print("Hello,I am {}".format(Name))
+        #print(self) ---  <__main__.Person object at 0x7fd1e00b9ef0>
+        
+Naveen=Person("Naveen Chowdary",24,100000)
+ # o/p    ==   Hello,I am Naveen Chowdary
+#print(Naveen)
+print(Naveen.Fullname)
+ #o/p ==  Naveen Chowdary
+print(Naveen.My_Age)
+#o/p  ==  24
+print(Naveen.My_Sal)
+#o/p  ==  100000
+'''
+
+
+
+class Car:
+    def __init__(self,Color,Acceleration):
+        self.Color = Color
+        self.Car_Accel = Acceleration
+        self.Speed = 0
+        
+    def Accelerate(self):
+        print("Accelerating")
+        self.Speed += self.Car_Accel
+        
+    def Breaks(self):
+        print("Breaks Applied..Stopped")
+        self.Speed -= 10
+        
+Ferrari = Car("Blue",199)
+
+Bugati = Car("Red",198)
+print(Ferrari)
+#o/p ===    <__main__.Car object at 0x7f844618b208>
+
+print(Bugati)   
+# o/p  ==   <__main__.Car object at 0x7fd66bd18320>
+
+print(Ferrari.Color)
+# o/p  == Blue
+
+speed = Ferrari.Accelerate()
+print(Ferrari.Speed)
+
+#o/p ==   Accelerating    199
+
+speed = Bugati.Breaks()
+print(Bugati.Speed)
+
+# o/p   ----  Breaks Applied..Stopped    -10
+speed = Ferrari.Accelerate()
+print(Ferrari.Speed)
+#   o/p   --    Accelerating       398
+
+
+speed = Bugati.Accelerate()
+print(Bugati.Speed)
+
+#  o/p  --   Accelerating    188
+
+
+
+
+
+'''
+class BankAccount:
+    def __init__ (self,Name,Mob_no,Accnt_no):
+        self.Name = Name
+        self.Mob_no = Mob_no
+        self.Accnt_no = Accnt_no
+        
+        
+Person = BankAccount("God Of Thunder",9440458890,987654321)
+print(Person.Name)
+#o/p --   God Of Thunder
+'''
+
+
+
+
+class BankAccount:
+    def __init__ (self,Name,Mob_no):
+        self.Name = Name
+        self.Mob_no = Mob_no
+        self.Generate_Account_no()
+        self.Balance = 0
+        
+    def Generate_Account_no(self):
+        import uuid
+        self.Account_no = str(uuid.uuid4())
+        
+    def Deposit(self,Amount):
+        self.Balance += Amount
+        
+    def Withdraw(self,Amount):
+        if Amount>self.Balance:
+            print("Insufficient Funds ra Gutle And Houle")
+        self.Balance -= Amount
+        
+    
+Person = BankAccount("God Of Thunder",9440458890)
+print(Person.Account_no)
+
+# o/p  --  3feefea7-aacc-4465-9bb1-56634179b143
+    
+Person.Deposit(10000)
+print(Person.Balance)
+
+# o/p  --  10000
+
+Person.Withdraw(1000000)
+print(Person.Balance)
+
+#   o/p  --  Insufficient Funds ra Gutle And Houle   -990000     
+
+
+
+class User:
+    def __init__(self,Name,Address,Mobile):
+        self.Name = Name
+        self.Address = Address
+        self.Mobile = Mobile
+        
+Customer = User("Lightning God","Aasgard",9848022222)
+print(Customer.Name)
+
+# o/p  -- Lightning God
+
+Person = BankAccount(Customer)
+print(Person.Name)
+
+    
+
+
+
+
+
+
+
+
+
+
