@@ -36,7 +36,25 @@ FootBall Match:
 
 9.. Output Should Contain The No of Fouls Commited By The Team.
 
-10.. 
+
+In Updated Version::(In Phase : II)
+==================================
+
+10.. Each Individual Player Stats Should Come As Output As Per The User Requirement like How many goals , How many Passses , How many Red Cards etc..
+
+11.. We Have To Add Another Team Also..
+
+12.. We Have To Pick The Paying 11 In Random Way Using Random Module.. For Both teams
+
+13.. We Have To Print The Output In The Format Of International Football Match..
+
+14.. We Have To Segregate The Players as Striker , Mid fielder ,  Defender , Goal Keeper..
+
+15.. Give Seperate Attributes To The All Kind Of Players Seperately And Some Common Attributes Set As Global 
+
+16.. 
+
+
 
 
     Attributes For ThE Main Class:
