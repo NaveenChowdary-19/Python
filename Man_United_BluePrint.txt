@@ -1,0 +1,70 @@
+
+FootBall Match:
+===============
+
+1.. Input should be the integer
+
+2.. When You Take the input the Output Should represent :
+
+
+		12' Cristiano Ronaldo  Assist By Garath Bale 
+
+		28' Yellow Card For Sergio Ramos
+
+		45' Red Card For Casemiro
+
+		67' Toni Kroos Assist By Ronaldo
+
+		76' Aaron Ramsey Assist By Marcelo
+
+		88' Cristiano Ronaldo Assist By Benzma
+
+		90' Cristiano Ronaldo By Jamie Vardy
+	
+
+3.. Team Should Be In The JSon Format:
+
+4.. Output contains the passes also according the the given minutes .. if minutes are 24 the passes complete are 216 passes means 24*9
+
+5.. the yellow card and goals etc. be in certain minutes means we fix those to the certain minutes
+
+6.. json format keys should be numbers and values should be player names
+
+7.. we can add the substitute players to the team in the middle and that should takae the input as json.
+
+8.. Input Integer Minutes Should Be Less Than Or Equal To 90 Minutes And Greater Than 0' Minutes  Else Raise Error.
+
+9.. Output Should Contain The No of Fouls Commited By The Team.
+
+10.. 
+
+
+    Attributes For ThE Main Class:
+    ==============================
+	1.. Set the Minutes For Goals ,Red Card , Yellow Card.. etc.
+
+	2..  Updated Attibutes Means For The Substitute Players
+      
+
+
+
+
+
+     Methods For Implementing:
+     =========================
+	
+1..  For the Printing of passes we should implement a method
+
+2..  Method fo the result and addind goals to the match And 
+
+3..  Method For Yellow card 
+
+4..  Method For Red Card
+
+5..  Method For Substituting The Player
+
+6..  
+
+
+
+8..  Format For The Printing Of Result
