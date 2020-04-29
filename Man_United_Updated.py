@@ -192,8 +192,10 @@ class Player_stats(Goal_Keeper):
 
 
     def Print_Player_Stats(self):
-
-        print("Your Favourite Player {} Stats Are ::".format(str(Fav_Player)),end="\n\n")
+        print(" ",end = "\n\n\n")
+        #print(Fav_Player)
+        print("Your Favourite Player -{}- Stats Are ::".format(Fav_Player_is))
+        print("====================================================",end="\n\n")
 
         print("{:>19} Goals  :--  ".format(" ") + str(self.Goals),end="\n\n")
 
@@ -246,7 +248,10 @@ if __name__ == "__main__":
 
     Minutes = int(input())
 
-    Fav_Player = input()
+    Fav_Player_is = str(input())
+
+    print(Minutes)
+    #print(Fav_Player)
 
 for Keys in Real_Madrid_Squad:
     Real_Madrid_Squad_List.append(Real_Madrid_Squad[Keys])
@@ -338,4 +343,3 @@ for player in range(playing_XI):
 Cristiano Ronaldo
 
 '''
-
