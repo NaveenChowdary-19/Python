@@ -6,6 +6,22 @@ Barcelona_Squad_List = []
 
 Match_Squad = []
 
+Required_Minutes_Real = []
+for minute in range(0,5):
+    x = random.randint(0,90)
+    Required_Minutes_Real.append(x)
+
+Required_Minutes_Real = sorted(Required_Minutes_Real,reverse=True)
+
+Required_Minutes_Barca = []
+for minute in range(0,5):
+    x = random.randint(0,90)
+    Required_Minutes_Barca.append(x)
+
+Required_Minutes_Barca = sorted(Required_Minutes_Barca,reverse=True)
+
+
+
 
 class Football:
 
@@ -21,11 +37,23 @@ class Football:
 
         self.Minutes = Minutes
 
+        self.Goals = random.randint(2,4)
+
         self.Passes = self.Minutes * 2
 
         self.Team_Passes = self.Minutes * 9
 
         self.Fouls = self.Minutes // 8
+
+        self.Free_Kicks = random.randint(5,8)
+
+        self.Corner_Kicks = random.randint(4,6)
+
+        self.Shots_On_Target = random.randint(5,8)
+
+        self.Total_Shots = random.randint(11,14)
+
+
 
 
         try:
@@ -40,61 +68,64 @@ class Football:
 
     def Real_Madrid_Stats(self):
 
+
+
         for stat_minute in range(self.Minutes):
-            if stat_minute == 12:
+            if stat_minute == Required_Minutes_Real[0]:
                 print(" ", end="\n\n")
-                print("{:>45}12'".format(" "))
+                print("{:>45}{}'".format(" ",Required_Minutes_Real[0]))
                 print("{:>45} ".format(" ") + Real_Madrid.Goal, end="\n" + "{:>45}".format(" ") + Real_Madrid.Assist)
 
-            if stat_minute == 28:
+            if stat_minute == Required_Minutes_Real[1]:
                 print(" ", end="\n\n")
-                print("{:>45}28'".format(" "))
+                print("{:>45}{}'".format(" ",Required_Minutes_Real[1]))
                 print("{:>45}".format(" ") + Real_Madrid.Yellow_Card)
 
-            if stat_minute == 47:
+            if stat_minute == Required_Minutes_Real[2]:
                 print(" ", end="\n\n")
-                print("{:>45}47'".format(" "))
+                print("{:>45}{}'".format(" ",Required_Minutes_Real[2]))
                 print("{:>45}".format(" ") + Real_Madrid.Red_Card)
 
-            if stat_minute == 65:
+            if stat_minute == Required_Minutes_Real[3]:
                 print(" ", end="\n\n")
-                print("{:>45}65'".format(" "))
+                print("{:>45}{}'".format(" ",Required_Minutes_Real[3]))
                 print("{:>45} ".format(" ") + Real_Madrid.Goal, end="\n" + "{:>45}".format(" ") + Real_Madrid.Assist)
 
-            if stat_minute == 76:
+            if stat_minute == Required_Minutes_Real[4]:
                 print(" ", end="\n\n")
-                print("{:>45}76'".format(" "))
+                print("{:>45}{}'".format(" ",Required_Minutes_Real[4]))
                 print("{:>45}".format(" ") + "Own Goal", end="\n" + "{:>45}".format(" ") + Barcelona.Yellow_Card)
 
 
 
-    def Barcelona_Stats(self):
+    #def Barcelona_Stats(self):
 
-        for stat_minute in range(self.Minutes):
-            if stat_minute == 19:
+        #for stat_minute in range(self.Minutes):
+            if stat_minute == Required_Minutes_Barca[0]:
                 print(" ", end="\n\n")
-                print("{:>72}19'".format(" "))
+                print("{:>72}{}'".format(" ",Required_Minutes_Barca[0]))
                 print("{:>72}".format(" ") + Barcelona.Goal, end="\n" + "{:72}".format(" ") + Barcelona.Assist)
 
-            if stat_minute == 38:
+            if stat_minute == Required_Minutes_Barca[1]:
                 print(" ", end="\n\n")
-                print("{:>72}38'".format(" "))
+                print("{:>72}{}'".format(" ",Required_Minutes_Barca[1]))
                 print("{:>72}".format(" ") + Barcelona.Yellow_Card, end="\n")
 
-            if stat_minute == 62:
+            if stat_minute == Required_Minutes_Barca[2]:
                 print(" ", end="\n\n")
-                print("{:>72}62'".format(" "))
+                print("{:>72}'".format(" ",Required_Minutes_Barca[2]))
                 print("{:>72}".format(" ") + Barcelona.Red_Card, end="\n")
 
-            if stat_minute == 86:
+            if stat_minute == Required_Minutes_Barca[3]:
                 print(" ", end="\n\n")
-                print("{:>72}86'".format(" "))
+                print("{:>72}{}'".format(" ",Required_Minutes_Barca[3]))
                 print("{:>72}".format(" ") + Barcelona.Goal, end="\n" + "{:>72}".format(" ") + Barcelona.Assist)
 
-            if stat_minute == 89:
+            if stat_minute == Required_Minutes_Barca[4]:
                 print(" ", end="\n\n")
-                print("{:>72}89'".format(" "))
+                print("{:>72}{}'".format(" ",Required_Minutes_Barca[4]))
                 print("{:>72}".format(" ") + "Own Goal", end="\n" + "{:>72}".format(" ") + Real_Madrid.Yellow_Card)
+
 
     def stats_of_The_Match(self):
 
@@ -106,21 +137,44 @@ class Football:
         print("{:>60}".format(" ") + "=====================", end="\n\n")
 
         print("{:>42} :== Real Madrid :== ".format(" ") + "  ||  " + " :== Barcelona :==")
+        print(" ", end="\n\n")
 
         self.Fouls = random.randint(6, 14)
 
-        self.Yellow_Card = random.randint(2, 4)  # corner_kicks
+        self.Yellow_Card = random.randint(2, 4)
 
-        # self.free_kicks = random.randint(5,8)         # free_kicks
+        self.Red_Card = random.randint(0,1)
 
-        # self.Goals = random.randint(1,2)
+        #Barca = "{}. {:<30}".format(str(player + 1), str(Barcelona_Squad_List[player]))
 
-        # self.shots_on_target = random.randint(4,6)    #shots_on_target
+        #Real = "{}. {:<30} {:<63}".format(str(player + 1), str(Real_Madrid_Squad_List[player]), " ")
 
-        print("{:>50}".format(" ") + str(Real_Madrid.Yellow_Card) + "  Yellow Cards  " + "  " + str(
-            Barcelona.Yellow_Card))
+        #("{}. {:<30} {:<63}".format(str(player + 1), str(Real_Madrid_Squad_List[player]), " "),
+#              "{}. {:<30}".format(str(player + 1), str(Barcelona_Squad_List[player])))
 
-        # print(Barcelona.shots_on_target)
+
+
+
+        print("{:>53}".format(" ") + str(Real_Madrid.Goals) + "{:<20}  --*: Goals :*--  " + "{:>10}".format(str(Barcelona.Goals)),end = "\n\n")
+
+        print("{:>53}".format(" ") + str(Real_Madrid.Yellow_Card) + "   --*: Yellow Cards :*--  " + "{:>15}".format(str(Barcelona.Yellow_Card)),end = "\n\n")
+
+        print("{:>53}".format(" ") + str(Real_Madrid.Red_Card) + "   --*: Red Cards :*--  " + "{:>15}".format(Barcelona.Red_Card),end = "\n\n")
+
+        print("{:>53}".format(" ") + str(Real_Madrid.Fouls) + "   --*: Fouls :*--  " + "{:>15}".format(str(Barcelona.Fouls)),end = "\n\n")
+
+        print("{:>53}".format(" ") + str(Real_Madrid.Corner_Kicks) + "  --*: Corner_Kicks :*--  " + "{:>15}".format(str(Barcelona.Corner_Kicks)), end="\n\n")
+
+        print("{:>53}".format(" ") + str(Real_Madrid.Free_Kicks) + "  --*: Free_Kicks :*--  " + "{:>15}".format(str(Barcelona.Free_Kicks)), end="\n\n")
+
+        print("{:>53}".format(" ") + str(Real_Madrid.Shots_On_Target) + "  --*: Shots_On_Target :*--  " + "{:>15}".format(str(Barcelona.Shots_On_Target)),end="\n\n")
+
+        print("{:>53}".format(" ") + str(Real_Madrid.Total_Shots) + "  --*: Total_Shots :*--  " + "{:>15}".format(str(Barcelona.Total_Shots)), end="\n\n")
+
+        print("{:>53}".format(" ") + str(Real_Madrid.Team_Passes) + "  --*: Team_Passes :*--  " + "{:>15}".format(str(Barcelona.Team_Passes)), end="\n\n")
+
+
+
 
 
 
@@ -134,14 +188,13 @@ class Football:
 
         Real_Madrid.Real_Madrid_Stats()
 
-        Barcelona.Barcelona_Stats()
+        #Barcelona.Barcelona_Stats()
 
         Real_Madrid.stats_of_The_Match()
 
-        # Txt =  "{:>24} Passes Completed By Real_Madrid Team Are::  {:>12}  "
-        # print("{:<24}".format("Passes Completed By Real_Madrid Team Are  ::  " + str(Real_Madrid.Team_Passes)))
-        # print(Txt.format(" ",str(Real_Madrid.Team_Passes)))
-        # print("No Of Fouls Committed Are  :  " + str(Real_Madrid.Fouls))
+        #Barcelona.stats_of_The_Match()
+
+
 
 
 class Striker:
@@ -210,8 +263,7 @@ class Player_stats(Goal_Keeper):
 
         if Fav_Player_is not in Match_Squad:
             print(
-                "Arey Thuppals Yadava Your Favourite Player -{}- Not In Squad Ra Gutle. He Got Injured Give Another Player Ra Houle ".format(
-                    Fav_Player_is))
+                "Arey Thuppals Yadava Your Favourite Player -{}- Not In Squad Ra Gutle. He Got Injured Give Another Player Ra Houle ".format(Fav_Player_is))
 
         else:
 
@@ -222,17 +274,13 @@ class Player_stats(Goal_Keeper):
 
             print("{:>19} Goals  :--  ".format(" ") + str(self.Goals), end="\n\n")
 
-            print("{:>19} shots_on_target :--  ".format(" ") + str(self.shots_on_target),
-                  end="\n\n")  # = random.randint(4, 6)  # shots_on_target
+            print("{:>19} shots_on_target :--  ".format(" ") + str(self.shots_on_target),end="\n\n")
 
-            print("{:>19} Dribbles  :--  ".format(" ") + str(self.dribbles),
-                  end="\n\n")  # = random.randint(6, 8)  # dribbles
+            print("{:>19} Dribbles  :--  ".format(" ") + str(self.dribbles),end="\n\n")
 
-            print("{:>19} Total Shots  :--  ".format(" ") + str(self.total_shots),
-                  end="\n\n")  # = random.randint(6, 9)  # total_shots
+            print("{:>19} Total Shots  :--  ".format(" ") + str(self.total_shots),end="\n\n")
 
-            print("{:>19} Penalty Kicks  :--  ".format(" ") + str(self.penalty_kicks),
-                  end="\n\n")  # = random.randint(0, 2)  # penalty_kicks
+            print("{:>19} Penalty Kicks  :--  ".format(" ") + str(self.penalty_kicks),end="\n\n")
 
             print("{:>19} Assists  :--  ".format(" ") + str(self.Assists), end="\n\n")
 
@@ -296,9 +344,9 @@ playing_XI = len(Real_Madrid_Squad_List)
 
 print(" ", end="\n\n\n")
 
-print("Real Madrid Playing XI are :" + "{:>70}".format(" ") + "Barcelona Playing XI are :")
+print("{:>10}Real Madrid Playing XI are :".format(" ") + "{:>70}".format(" ") + "Barcelona Playing XI are :")
 
-print("===========================" + "{:>70}".format(" ") + "===========================", end="\n\n")
+print("{:>10}===========================".format(" ") + "{:>70}".format(" ") + "===========================", end="\n\n")
 
 for player in range(playing_XI):
 
@@ -306,7 +354,9 @@ for player in range(playing_XI):
 
     Real = "{}. {:<30} {:<63}".format(str(player + 1), str(Real_Madrid_Squad_List[player]), " ")
 
-    print(Real, Barca)
+    print("{:>11}{}. {:<30} {:<63}".format(" ",str(player + 1), str(Real_Madrid_Squad_List[player]), " ") , "{}. {:<30}".format(str(player + 1), str(Barcelona_Squad_List[player])))
+
+    #print(Real, Barca)
 
 print(" ", end="\n\n\n")
 
@@ -334,11 +384,17 @@ print(Fav_Player.Print_Player_Stats())
 
 print(Match_Squad)
 
+print(Required_Minutes_Real)
+print(Required_Minutes_Barca)
+
 '''
-{"7":"Cristiano Ronaldo" , "1":"Keylor Navas" , "2":"Sergio Ramos" , "3":"Marcelo" , "4":"Varane" , "5":"Toni Kroos" , "6":"Aaron Ramsey" , "8":"Casemiro" , "9":"Karim Benzma" , "10":"Jamie Vardy" , "11":"Gerath Bale"}
-{"10":"Lionel Messi" , "1":"Cluadio Bravo" , "3":"Gerard Pique" , "4":"Virgil Vandijk" , "5":"Sergio Roberto" , "2":"David Luiz" , "6":"Robert Levendowski" , "7":"James Rodrguize" , "8":"Paulo Dybala" , "9":"Masuet Ozil" , "11":"Mohammad Salah"}
+{"7":"Cristiano Ronaldo" , "1":"Keylor Navas" , "2":"Sergio Ramos" , "3":"Marcelo" , "4":"Varane" , "8":"Toni Kroos" , "6":"Aaron Ramsey" , "5":"Casemiro" , "9":"Karim Benzma" , "10":"Jamie Vardy" , "11":"Gerath Bale"}
+{"10":"Lionel Messi" , "1":"Cluadio Bravo" , "3":"Gerard Pique" , "4":"Virgil Vandijk" , "5":"Sergio Roberto" , "2":"David Luiz" , "9":"Robert Levendowski" , "7":"James Rodrguize" , "8":"Paulo Dybala" , "6":"Masuet Ozil" , "11":"Mohammad Salah"}
 90
-Chowdary
+Cristiano Ronaldo
+
+You Have to give the minutes in random way..and set them in a list 
+
 
 
 '''
