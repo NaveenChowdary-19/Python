@@ -406,3 +406,171 @@ Match Result Of The Match Stats
 --- And Substitute Players Stats Should Also Come in Out put If User Wants
  
 '''
+
+
+
+
+
+
+"""
+
+OUTPUT:::
+=========
+
+
+"F:\Naveen Chowdary\Naveen_Pycharm\venv\Scripts\python.exe" "F:/Naveen Chowdary/Naveen_Pycharm/Champions_League_Version_II.py"
+[90, 60, 60, 34, 33]
+[82, 52, 20, 20, 8]
+{"7":"Cristiano Ronaldo" , "1":"Keylor Navas" , "2":"Sergio Ramos" , "3":"Marcelo" , "4":"Varane" , "8":"Toni Kroos" , "6":"Aaron Ramsey" , "5":"Casemiro" , "9":"Karim Benzma" , "10":"Jamie Vardy" , "11":"Gerath Bale"}
+{"10":"Lionel Messi" , "1":"Cluadio Bravo" , "3":"Gerard Pique" , "4":"Virgil Vandijk" , "5":"Sergio Roberto" , "2":"David Luiz" , "9":"Robert Levendowski" , "7":"James Rodrguize" , "8":"Paulo Dybala" , "6":"Masuet Ozil" , "11":"Mohammad Salah"}
+90
+Cristiano Ronaldo
+90
+ 
+
+
+          Real Madrid Playing XI are :                                                                      Barcelona Playing XI are :
+          ===========================                                                                      ===========================
+
+           1. Cristiano Ronaldo                                                                              1. Lionel Messi                  
+           2. Keylor Navas                                                                                   2. Cluadio Bravo                 
+           3. Sergio Ramos                                                                                   3. Gerard Pique                  
+           4. Marcelo                                                                                        4. Virgil Vandijk                
+           5. Varane                                                                                         5. Sergio Roberto                
+           6. Toni Kroos                                                                                     6. David Luiz                    
+           7. Aaron Ramsey                                                                                   7. Robert Levendowski            
+           8. Casemiro                                                                                       8. James Rodrguize               
+           9. Karim Benzma                                                                                   9. Paulo Dybala                  
+           10. Jamie Vardy                                                                                    10. Masuet Ozil                   
+           11. Gerath Bale                                                                                    11. Mohammad Salah                
+ 
+
+
+                                                      Result Of The Match BY 'Heineken'
+                                                       ===============================
+
+                                                    :== 3 :==   ||   :==  4  :== 
+
+                                          :== Real Madrid :==   ||   :== Barcelona :==
+ 
+
+                                                                        8'
+                                                                        Own Goal
+                                                                        Sergio Ramos 
+
+                                                                        20'
+                                                                        James Rodrguize
+ 
+
+                                                                        20'
+                                                                        Sergio Roberto
+                                                                        James Rodrguize 
+
+                                             33'
+                                             Own Goal
+                                             Virgil Vandijk 
+
+                                             34'
+                                              Sergio Ramos
+                                             Gerath Bale 
+
+                                                                        52'
+                                                                        Virgil Vandijk
+ 
+
+                                             60'
+                                             Sergio Ramos
+ 
+
+                                             60'
+                                             Aaron Ramsey
+ 
+
+                                                                        82'
+                                                                        Sergio Roberto
+                                                                        James Rodrguize 
+
+
+                                                             Stats Of The Match
+                                                            =====================
+
+                                                     :== 3 :==   ||   :==  4  :== 
+                                           :== Real Madrid :==   ||   :== Barcelona :==
+ 
+
+                                                     3  --*: Goals :*--  3
+
+                                                     3   --*: Yellow Cards :*--  Virgil Vandijk
+
+                                                     1   --*: Red Cards :*--  James Rodrguize
+
+                                                     14   --*: Fouls :*--  11
+
+                                                     4  --*: Corner_Kicks :*--  4
+
+                                                     5  --*: Free_Kicks :*--  7
+
+                                                     8  --*: Shots_On_Target :*--  7
+
+                                                     14  --*: Total_Shots :*--  12
+
+                                                     810  --*: Team_Passes :*--  720
+
+None
+ 
+
+
+Your Favourite Player -Cristiano Ronaldo- Stats Are ::
+====================================================
+
+                    Goals  :--  2
+
+                    shots_on_target :--  5
+
+                    Dribbles  :--  7
+
+                    Total Shots  :--  9
+
+                    Penalty Kicks  :--  1
+
+                    Assists  :--  2
+
+                    Corner_kicks  :--  2
+
+                    Free Kicks  :--  2
+
+                    Crosses  :--  1
+
+                    Retrives  :--  8
+
+                    Fouls  :--  3
+
+                    Blocks  :--  5
+
+                    Interceptions  :--  10
+
+                    Tackles  :--  6
+
+                    Saves  :--  4
+
+                    Clean_sheets  :--  0
+
+                    Goals_Awarded  :--  1
+
+                    Penalty_kicks_saved  :--  1
+
+None
+['Cristiano Ronaldo', 'Keylor Navas', 'Sergio Ramos', 'Marcelo', 'Varane', 'Toni Kroos', 'Aaron Ramsey', 'Casemiro', 'Karim Benzma', 'Jamie Vardy', 'Gerath Bale', 'Lionel Messi', 'Cluadio Bravo', 'Gerard Pique', 'Virgil Vandijk', 'Sergio Roberto', 'David Luiz', 'Robert Levendowski', 'James Rodrguize', 'Paulo Dybala', 'Masuet Ozil', 'Mohammad Salah']
+
+Process finished with exit code 0
+
+
+"""
+
+
+
+
+
+
+
+
