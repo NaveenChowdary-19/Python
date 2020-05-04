@@ -395,7 +395,7 @@ print(Match_Squad)
 Cristiano Ronaldo
 
 
----Actually By goals In A Random Way..But how Will You Represent That in Result Of The Match
+
 ---How Will You Represents The No Of Goals In Result Of The Match By Players 
 
 ---If I Give You a Input Player You Should Print If He is Striker Or Mid Fielder Or Goal Keeper Or Defender And Stats Should COme According to the Payer type And Should 
