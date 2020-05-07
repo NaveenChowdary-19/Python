@@ -21,13 +21,14 @@ if __name__ =="__main__":
     Team_II = json.loads(input())
 
 
-#print(Teams)
+Coin_Spin = ['Bat' , 'Bowl']
+Toss = random.choice(Coin_Spin)
 
 print(" ",end = "\n\n\n")
 
-Toss = random.choice(Teams)
+Toss_won = random.choice(Teams)
 print("Hello... We Bleed Blue.. Welcome To The Wankade .. Its Time For The Toss.. Ganguly Will Spin Coin.. Rohith Calls Annnddddd... ",end = "\n\n")
-print("{}Won The Toss And Choice To Bat First".format(Toss))
+print("{}Won The Toss And Choice To {} First".format(Toss_won,Toss))
 
 
 for keys in Mumbai_Team:
@@ -51,6 +52,51 @@ for player in range(playing_XI):
 
 
 print(" ",end = "\n\n\n")
+
+
+
+
+"""
+
+Hello... We Bleed Blue.. Welcome To The Wankade .. Its Time For The Toss.. Ganguly Will Spin Coin.. Rohith Calls Annnddddd... 
+
+Mumbai Indians Won The Toss And Choice To Bat First
+ 
+
+
+          Mumbai Indians Playing XI are :                                                                      Chennai Kings Playing XI are :
+          =============================                                                                        ============================
+
+           1. Rohith Sharma (Cap)                                                                               1. Shane Watson                  
+
+           2. Quinton DeKock (Wk)                                                                               2. Ambati Rayudu                 
+
+           3. Chris Lynn                                                                                        3. Sursh Raina                   
+
+           4. Yuvaraj Singh                                                                                     4. Faf Duplesis                  
+
+           5. Kerion Pollard                                                                                    5. M S Dhoni (Cap)&(Wk)          
+
+           6. Hardik Pandya                                                                                     6. Dwayne Bravo                  
+
+           7. Krunal Pandya                                                                                     7. Ravindra Jadeja               
+
+           8. Lasith Malinga                                                                                    8. Harbajan Singh                
+
+           9. Nathan Coulter-Nile                                                                               9. Deepak Chahar                 
+
+           10. Dhawal Kulakarni                                                                                  10. Shardaul Thakur               
+
+           11. Jasprith Bumrah                                                                                   11. Josh Hazlewood                
+
+ 
+
+
+
+Process finished with exit code 0
+
+
+"""
 
 
 
