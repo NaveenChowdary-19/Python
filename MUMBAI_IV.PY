@@ -105,7 +105,7 @@ class Cricketer:
 if __name__ == "__main__":
     import json
 
-    Teams = input().split(",")`1    q
+    Teams = input().split(",")
 
     Mumbai_Team = json.loads(input())
 
@@ -164,3 +164,4 @@ Mumbai Indians , Chennai Kings
 {"1":"Shane Watson" , "2":"Ambati Rayudu" , "3":"Sursh Raina" , "4":"Faf Duplesis" , "5":"M S Dhoni (Cap)&(Wk)" , "6":"Dwayne Bravo" , "7":"Ravindra Jadeja" , "8":"Harbajan Singh" , "9":"Deepak Chahar" , "10":"Shardaul Thakur" , "11":"Josh Hazlewood"}
 
 """
+
